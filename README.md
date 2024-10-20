@@ -25,7 +25,9 @@ The Restaurant Management System (RMS) is a user-friendly application designed f
 
 1. Clone the repository:
    `git clone https://github.com/Invito101/byteme.git`
-2. Run the application:
+2. Move into the byteme directory:
+   `cd byteme`
+3. Run the application:
    `python main.py`
 
 For accessing the admin interface, use the password `password`
