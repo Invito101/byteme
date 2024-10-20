@@ -111,10 +111,10 @@ class OrderHistoryManager(tk.Frame):
       self.menu_list_frame_detail = tk.Frame(self.menu_list_frame, bg=bg_color)
       self.menu_list_frame_detail.grid(row=index, column=0, sticky="nsew", padx=5, pady=5)
 
-      new_item_name = tk.Label(self.menu_list_frame_detail, text=val[0], font="Roboto 12 bold", bg=bg_color, fg="white", width=40, height=2, anchor="w")
+      new_item_name = tk.Label(self.menu_list_frame_detail, text=val[0], font="Roboto 12 bold", bg=bg_color, fg="white", width=60, height=2, anchor="w")
       new_item_name.grid(row=0, column=0, pady=5)
 
-      new_item_price = tk.Label(self.menu_list_frame_detail, text=f"₹{val[1]}", font="Roboto 12 bold", bg=bg_color, fg="white", width=19, height=2, anchor="w")
+      new_item_price = tk.Label(self.menu_list_frame_detail, text=f"₹{val[1]}", font="Roboto 12 bold", bg=bg_color, fg="white", width=42, height=2, anchor="w")
       new_item_price.grid(row=0, column=1, padx=5, pady=5)
       
       delete_button = tk.Button(self.menu_list_frame_detail, text="Delete", command=lambda idx=index: self.delete_item(idx), font="Roboto 12 bold", fg="white", bg=bg_color, activebackground=RED, activeforeground="white", highlightthickness=0, relief="raised", border=2)
@@ -146,17 +146,17 @@ class OrderHistoryManager(tk.Frame):
       self.orders_list_frame_detail = tk.Frame(self.status_list_frame, bg=bg_color)
       self.orders_list_frame_detail.grid(row=index, column=0, sticky="nsew", padx=5, pady=5)
 
-      order_id = tk.Label(self.orders_list_frame_detail, text=val[0], font="Roboto 12 bold", bg=bg_color, fg='white', width=2, height=2, anchor="w")
+      order_id = tk.Label(self.orders_list_frame_detail, text=val[0], font="Roboto 12 bold", bg=bg_color, fg='white', width=4, height=2, anchor="w")
       order_id.grid(row=index, column=0, pady=5)
 
-      customer_name = tk.Label(self.orders_list_frame_detail, text=val[1], font="Roboto 12 bold", bg=bg_color, fg='white', width=12, height=2, anchor="w")
-      customer_name.grid(row=index, column=1, padx=5, pady=5, sticky="w")
+      customer_name = tk.Label(self.orders_list_frame_detail, text=val[1], font="Roboto 12 bold", bg=bg_color, fg='white', width=13, height=2, anchor="w")
+      customer_name.grid(row=index, column=1, padx=4, pady=5, sticky="w")
       
-      order = tk.Label(self.orders_list_frame_detail, text=val[2], font="Roboto 12 bold", bg=bg_color, fg='white', width=30, height=2, anchor="w")
-      order.grid(row=index, column=2, pady=5, sticky="w")
+      order = tk.Label(self.orders_list_frame_detail, text=val[2], font="Roboto 12 bold", bg=bg_color, fg='white', width=60, height=2, anchor="w")
+      order.grid(row=index, column=2, pady=4, sticky="w")
 
-      total_amount = tk.Label(self.orders_list_frame_detail, text=val[3], font="Roboto 12 bold", bg=bg_color, fg='white', width=10, height=2, anchor="w")
-      total_amount.grid(row=index, column=3, padx=5, pady=5)
+      total_amount = tk.Label(self.orders_list_frame_detail, text=val[3], font="Roboto 12 bold", bg=bg_color, fg='white', width=20, height=2, anchor="w")
+      total_amount.grid(row=index, column=3, padx=4, pady=5)
 
       completed_button = tk.Button(self.orders_list_frame_detail, text="Completed", command=lambda idx=index: self.mark_as_completed(idx), font="Roboto 12 bold", fg="white", bg=bg_color, activebackground=GREEN, activeforeground="white", highlightthickness=0, relief="raised", border=2)
       completed_button.grid(row=index, column=4, pady=5, sticky="e")
@@ -180,7 +180,7 @@ class AdminPasswordFrame(tk.Frame):
     pass
 
   def submit(self):
-    if self.password.get() == "python-project":
+    if self.password.get() == "password":
       switch_frame(self.parent.admin_frame)
       self.password_entry.delete(0, tk.END)
 

@@ -15,7 +15,7 @@ class RestaurantUI(tk.Tk):
   def __init__(self):
     super().__init__()
     self.title("byteme - Restaurant Management System")
-    self.geometry("800x800")
+    self.geometry("1280x800")
     self.configure(bg = BG_COLOR)
     self.grid_rowconfigure(0, weight=100)
     self.grid_columnconfigure(0, weight=100)
@@ -31,6 +31,7 @@ class RestaurantUI(tk.Tk):
 
     for frame in (self.selection_frame, self.admin_frame, self.customer_frame, self.customer_name_frame, self.customer_order_confirmation_frame, self.admin_password_frame):
       frame.grid(row=0, column=0, sticky='nsew')
+      frame.grid_columnconfigure(0, weight=1)
 
     switch_frame(self.selection_frame)
 

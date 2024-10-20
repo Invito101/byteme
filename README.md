@@ -28,6 +28,8 @@ The Restaurant Management System (RMS) is a user-friendly application designed f
 2. Run the application:
    `python main.py`
 
+> For accessing the admin interface, use the password **password**
+
 ## Technologies Used
 
 1. **Python**: The primary programming language.
@@ -36,10 +38,10 @@ The Restaurant Management System (RMS) is a user-friendly application designed f
 
 ## Contributors
 
-1. **Shaurya Singh** - IMT2024064
-2. **Anurag Rao U** - IMT2024028
-3. **Subhadeep Das** - BT2024219
-4. **Jadav Sai Rugvedh** - IMT2024051
+1. [Shaurya Singh](https://github.com/AresToLGM) - IMT2024064
+2. [Anurag Rao U](https://github.com/AresToLGM) - IMT2024028
+3. [Subhadeep Das](https://github.com/Subhadeep-7897) - BT2024219
+4. [Jadav Sai Rugvedh](https://github.com/rugvedhjadav) - IMT2024051
 
 ## License
 

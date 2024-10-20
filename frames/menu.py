@@ -106,10 +106,10 @@ class Menu(tk.Frame):
       self.menu_list_frame_detail = tk.Frame(self.menu_list_frame, bg=bg_color)
       self.menu_list_frame_detail.grid(row=index, column=0, sticky="nsew", padx=5, pady=5)
 
-      new_item_name = tk.Label(self.menu_list_frame_detail, text=val[0], font="Roboto 12 bold", bg=bg_color, fg='white', width=32, anchor="w")
+      new_item_name = tk.Label(self.menu_list_frame_detail, text=val[0], font="Roboto 12 bold", bg=bg_color, fg='white', width=60, anchor="w")
       new_item_name.grid(row=index, column=0, padx=5, pady=5, sticky="ew")
 
-      new_item_price = tk.Label(self.menu_list_frame_detail, text=f"₹{val[1]}", font="Roboto 12 bold", bg=bg_color, fg='white', anchor="w", width=18)
+      new_item_price = tk.Label(self.menu_list_frame_detail, text=f"₹{val[1]}", font="Roboto 12 bold", bg=bg_color, fg='white', anchor="w", width=34)
       new_item_price.grid(row=index, column=1, padx=(0,5), pady=5, sticky="w")
       
       decrease_button = tk.Button(self.menu_list_frame_detail, text="-",  font="Roboto 12 bold", command=lambda name=val[0]: self.decrease(name), width=1, height=1, fg="black", bg=GRAY, activebackground=DARK_RED, activeforeground="white", highlightthickness=0, relief="raised", border=2)

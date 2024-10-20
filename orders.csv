@@ -5,7 +5,7 @@ ID,Customer Name,Item Name and Quantity,Total Amount,Order Completed
 4,Sneha,"Pongal - 1, Vada - 2",₹200.00,True
 5,Vikram,"Dosa - 2, Filter Coffee - 2",₹240.00,False
 6,Ananya,"Appam - 1, Vegetable Kurma - 1",₹190.00,True
-7,Karan,"Mysore Pak - 3",₹150.00,True
+7,Karan,Mysore Pak - 3,₹150.00,True
 8,Meera,"Idli - 2, Sambar - 2, Filter Coffee - 1",₹190.00,False
 9,Siddharth,"Chettinad Chicken Curry - 1, Rice - 1",₹250.00,True
 10,Kavya,"Dosa - 1, Rasam - 1",₹130.00,False
@@ -18,4 +18,5 @@ ID,Customer Name,Item Name and Quantity,Total Amount,Order Completed
 17,Karan,"Rasam - 1, Idli - 3",₹150.00,True
 18,Meera,"Pongal - 1, Vada - 1, Filter Coffee - 1",₹160.00,False
 19,Siddharth,"Dosa - 2, Vegetable Kurma - 1",₹270.00,True
-20,Kavya,"Biryani - 2",₹340.00,False
+20,Kavya,Biryani - 2,₹340.00,False
+21,Customer 21,Rasam - 8,₹283.20,True
