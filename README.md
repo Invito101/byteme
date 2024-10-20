@@ -9,7 +9,6 @@ The Restaurant Management System (RMS) is a user-friendly application designed f
 1. **Customer Interface**
 
    - **Menu Display**: Customers can view a list of food items along with their prices.
-
    - **Order Placement**: Customers can select items, see the total cost and place an order.
 
 2. **Admin Interface**
