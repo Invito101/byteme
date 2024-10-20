@@ -28,7 +28,7 @@ The Restaurant Management System (RMS) is a user-friendly application designed f
 2. Run the application:
    `python main.py`
 
-> For accessing the admin interface, use the password `**password**`
+> For accessing the admin interface, use the password `password`
 
 ## Technologies Used
 
